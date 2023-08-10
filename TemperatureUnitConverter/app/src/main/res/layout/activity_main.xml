@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_Main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_back"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:hint="Give the temperature"
+        android:inputType="numberDecimal|numberSigned"
+        android:padding="5dp"
+        android:textSize="18dp" />
+
+    <ToggleButton
+        android:text="Convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/toggleButton"
+        android:textOn="celsius->Farenheit"
+        android:textOff="Farenheit to Celcius"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toggleButton"
+        android:layout_margin="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/rounded_back"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="your converted temperature"
+        android:textSize="18dp" />
+
+    <Button
+        android:text="Convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignStart="@+id/toggleButton"
+        android:layout_marginTop="42dp"
+        android:id="@+id/button" />
+
+
+
+</LinearLayout>
